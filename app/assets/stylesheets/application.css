@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+ 
+ 
+ body {
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+label, input {
+    display: block;
+    margin-top: 10px;
+}​

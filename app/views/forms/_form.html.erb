@@ -1,0 +1,32 @@
+<form id="myform"></form>​
+
+<script>
+$("#myform").dform({
+    "action" : "index.html",
+    "method" : "get",
+    "html" :
+    [
+        {
+            "type" : "p",
+            "html" : "You must login"
+        },
+        {
+            "name" : "name",
+            "id" : "name",
+            "caption" : "Form name",
+            "type" : "text",
+            "placeholder" : "E.g. form name"
+        },
+        {
+            "name" : "content",
+            "id" : "content",
+            "caption" : "Content",
+            "type" : "email"
+        },
+        {
+            "type" : "submit",
+            "value" : "Login"
+        }
+    ]
+});
+</script>
