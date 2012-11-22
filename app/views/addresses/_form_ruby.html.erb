@@ -1,0 +1,39 @@
+<form id="new_address"></form>​
+
+<script>
+$("#new_address").dform({
+    "action" : "/addresses",
+    "method" : "post",
+    "html" :
+    [
+        {
+            "type" : "p",
+            "html" : "You must login"
+        },
+        {
+            "name" : "name",
+            "id" : "name",
+            "caption" : "Name",
+            "type" : "text",
+            "placeholder" : "Please enter name"
+        },
+        {
+            "name" : "phone",
+            "id" : "phone",
+            "caption" : "Phone",
+            "type" : "number"
+        },
+        {
+            "name" : "email",
+            "id" : "email",
+            "caption" : "Email",
+            "type" : "email"
+        },
+        {
+            "type" : "submit",
+            "value" : "Login"
+        }
+    ]
+});
+</script>
+
